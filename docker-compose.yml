@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+ qrl:
+  restart: on-failure
+  build:
+   context: .
+   dockerfile: Dockerfile
+  container_name: docker-qrl
+  volumes:
+  - "/etc/localtime:/etc/localtime:ro"
+  - "./data:/data"
