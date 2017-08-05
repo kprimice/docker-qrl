@@ -11,7 +11,7 @@ docker create \
   --name docker-qrl \
   -v /etc/localtime:/etc/localtime:ro \
   -v </path/to/qrl/data>:/data \
-  kprimice/docker-qrl:latest
+  kprimice/docker-qrl
 ```
 
 ## Parameters
